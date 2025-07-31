@@ -7,7 +7,20 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
+import hero from './mybgwebp.webp'
+import cheese from './cheese.png'
 
+export const heroImage = [
+    {
+        img: hero
+    }
+]
+
+export const logoImage = [
+    {
+        img: cheese
+    }
+]
 
 export const menu_list = [
     {

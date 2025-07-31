@@ -8,7 +8,7 @@ const Navbar = () => {
         <h1 className="text-2xl flex items-center  font-bold flex">
           Foodingo{" "}
           <img
-            src="src\assets\cheese-burger-generative-ai-png.png"
+            src="/images/cheese.png"
             alt=""
             className="w-[2rem] h-[2rem]"
           />

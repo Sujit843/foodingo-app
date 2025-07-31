@@ -8,7 +8,7 @@ body {
 }
 
 .containerHero {
-  background-image: url('src/assets/mybgwebp.webp');
+  background-image: url('/images/mybgwebp.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
