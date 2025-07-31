@@ -7,7 +7,7 @@ const FoodCard = ({ id, name, price, desc, img, rating, handleToast }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="h-[20rem] border-[0.2rem] border-red-400 rounded-[2rem] font-bold w-[250px] bg-white p-5 flex flex-col gap-2">
+    <div className="h-[20rem] border-[0.2rem] border-red-400 rounded-[2rem] font-bold w-[225px] bg-white flex flex-col justify-center p-[1.1rem_1rem]  gap-[6px]">
       <img
         src={img}
         alt=""
@@ -17,23 +17,24 @@ const FoodCard = ({ id, name, price, desc, img, rating, handleToast }) => {
         <h2>{name}</h2>
         <span className="text-red-600 ">₹{price}</span>
       </div>
-      <p className="text-sm font-normal">{desc.slice(0, 50)}...</p>
+      <p className="text-[0.8rem] font-normal">{desc.slice(0, 50)}...</p>
       <div className="flex justify-between ">
         <span className="flex justify-center items-center">
-          <AiFillStar className="mr-1 text-yellow-400" /> {rating}
+          <AiFillStar className="mr-2 text-yellow-400" /> {rating}
         </span>
-        <button
+        
+      </div>
+      <button
           onClick={() => {
             dispatch(
               addToCart({ id, name, price, rating, img, qty: 1 })
             );
             handleToast(name);
           }}
-          className="text-white p-[0.5rem_1.3rem] bg-red-500 hover:bg-red-600 rounded-lg text-sm"
+          className="text-white p-[0.4rem_1.1rem] bg-red-500 hover:bg-red-600 rounded-lg text-sm"
         >
           Add to cart
         </button>
-      </div>
     </div>
   );
 };
