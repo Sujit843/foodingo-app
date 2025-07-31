@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgb(244, 244, 244);
+}
+
+.containerHero {
+  background-image: url('src/assets/mybg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.explore-menu{
+  margin-top: 2rem;
+}
+
+.Most-dishes{
+  font-size: 26px;
+  font-weight: 700;
+  color: black solid;
+}
+
+.foodingo-txt{
+  padding-left: 8rem;
+}
+.foodingo-ptxt{
+  padding-left: 8rem;
+}
+.footer{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.home-nav{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.signin input::placeholder {
+  color: rgb(218, 23, 23);
+}
+
